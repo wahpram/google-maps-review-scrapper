@@ -81,6 +81,7 @@ def main():
                 actions = ActionChains(driver)
                 actions.move_to_element(review).perform()
                 
+                # Mendapatkan data nama user
                 try:
                     user_element = review.find_element(By.CSS_SELECTOR, '.GHT2ce.NsCY4')
                     user = user_element.find_element(By.CSS_SELECTOR, '.d4r55')
